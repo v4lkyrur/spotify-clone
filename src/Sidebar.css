@@ -1,0 +1,23 @@
+.sidebar {
+	background-color: black;
+	height: 100vh;
+	flex: 0.15;
+	color: white;
+	min-width: 230px;
+}
+
+#sidebar-logo {
+	width: 130px;
+	margin: 24px;
+}
+
+.sidebar-menu {
+	margin: 0 8px;
+}
+
+.sidebar > hr {
+	margin: 0 23px;
+	background-color: rgb(40, 40, 40);
+	border: none;
+	height: 1px;
+}

@@ -1,0 +1,63 @@
+.login {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	height: 70vh;
+	-webkit-animation: fade_in 3s; 
+    animation: fade_in 3s;
+}
+
+@-webkit-keyframes fade_in {
+    0% {opacity: 0;}
+}
+@keyframes fade_in {
+    0% {opacity: 0;}
+}
+
+.login > img {
+	width: 30%;
+	min-width: 250px;
+}
+
+.login > a {
+	display: block;
+	background-color: rgb(30, 215, 96);
+	font-weight: bold;
+	border-radius: 999px;
+	padding: 10px 30px;
+	text-decoration: none;
+	transition: background-color .5s, box-shadow .7s;
+	color: black;
+}
+
+.login > a:hover {
+	background-color: rgb(70, 255, 136);
+	box-shadow: 0 0 10px rgb(30, 215, 96);
+}
+
+.login > p {
+	color: rgb(30, 215, 96);
+	font-style: italic;
+	font-weight: lighter;
+}
+
+.login > p::before {
+	content: '~~◈ ';
+	-webkit-animation: blink 2s infinite;
+	animation: blink 2s infinite;
+	font-style: normal;
+}
+.login > p::after {
+	content: ' ◈~~';
+	-webkit-animation: blink 2s infinite;
+	animation: blink 2s infinite;
+	font-style: normal;
+}
+
+@-webkit-keyframes blink {
+	50% {color: rgb(30, 215, 96, 0.5);}
+}
+@keyframes blink {
+	50% {color: rgb(30, 215, 96, 0.5);}
+}

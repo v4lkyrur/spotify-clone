@@ -1,0 +1,29 @@
+.sidebar-menu-item {
+	color: rgb(179, 179, 179);
+	transition: color 0.4s;
+	cursor: pointer;
+	padding: 10px;
+	background-color: black;
+	font-weight: bold;
+	width: 100%;
+	border: none;
+	display: flex;
+	height: 40px;
+	line-height: 20px;
+	align-items: center;
+}
+
+.sidebar-menu-item:hover {
+	color: white;
+}
+
+.active {
+	color: white;
+	background-color: rgb(40, 40, 40);
+	border-radius: 5px;
+}
+
+.sidebar-menu-icon {
+	margin: 0 15px 0 5px;
+	font-size: 27px!important;
+}
