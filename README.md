@@ -16,9 +16,6 @@ Here I'm using React, Redux and Spotify API.
   - Getting search results (currently css styles only ready for 'tracks' results) / *currently unclickable*
 
 # TODO
-- Make a good file structure
-- Refactor Redux with slices
-- Refactor React with more smaller components
 - Home page
 - Your Library page
 - Profile page
