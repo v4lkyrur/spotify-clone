@@ -13,7 +13,7 @@ Here I'm using React, Redux and Spotify API.
   - Current playing track info
 - Search page
   - Getting recommended categories based on current user / *currently unclickable*
-  - Getting search results (currently css styles only ready for 'tracks' results) / *currently unclickable*
+  - Getting search results / *currently unclickable*
 
 # TODO
 - Home page
