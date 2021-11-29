@@ -45,7 +45,7 @@
 	border: none;
 	border-radius: 999px;
 	width: 360px;
-	background-image: url('./baseline_search_black_24dp.png');
+	background-image: url('../baseline_search_black_24dp.png');
 	background-repeat: no-repeat;
 	background-size: 30px;
 	background-position: 10px 50%;
@@ -85,15 +85,18 @@
 .track-item:hover {
 	background-color: rgb(59, 59, 59);
 }
+.track-item:hover .track-artist {
+	color: white;
+}
 
 .track-item-left {
-	margin: 5px 0 5px 5px;
-	height: 50px;
+	margin: 7.5px 0 7.5px 7.5px;
+	height: 45px;
 	width: 50%;
 }
 
 .track-image {
-	width: 50px;
+	width: 45px;
 	float: left;
 	margin-right: 10px;
 }
@@ -105,16 +108,72 @@
 
 .track-artist {
 	font-size: 13px;
+	color: rgb(168, 168, 168);
 }
 
 .track-item-right {
-	margin: 5px 5px 5px 0;
-	height: 50px;
+	margin: 7.5px 7.5px 7.5px 0;
+	height: 45px;
 	width: 50%;
 	text-align: right;
-	line-height: 50px;
+	line-height: 45px;
 }
 
 .track-duration {
 	font-size: 15px;
+}
+
+.artists-results-header, .albums-results-header, .playlists-results-header {
+	margin: 40px 0 20px;
+}
+
+.artists-results-list, .albums-results-list, .playlists-results-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+	grid-gap: 24px;
+	height: 280px;
+	overflow: hidden;
+	padding: 2.5px;
+}
+
+.artist-item, .album-item, .playlist-item {
+	height: 270px;
+	background-color: rgb(24, 24, 24);
+	border-radius: 10px;
+	box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+	transition: background-color 0.2s;
+	cursor: pointer;
+}
+
+.artist-item:hover, .album-item:hover, .playlist-item:hover {
+	background-color: rgb(39, 39, 39);
+}
+
+.artist-image, .album-image, .playlist-image {
+	display: block;
+	width: 170px;
+	height: 170px;
+	object-fit: cover;
+	box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+	margin: auto;
+	margin-top: 10px;
+}
+
+.artist-image {
+	border-radius: 50%;
+}
+
+.artist-name, .album-name, .playlist-name {
+	margin: 10px 10px 0 10px;
+	font-weight: bold;
+	font-size: 17px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+  overflow: hidden;
+}
+
+.artist-caption, .album-artist, .playlist-owner {
+	margin: 5px 10px 10px 10px;
+	font-size: 15px;
+	color: rgb(168, 168, 168);
 }

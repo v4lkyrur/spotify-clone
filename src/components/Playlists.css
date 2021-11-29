@@ -1,7 +1,6 @@
 .playlist {
 	color: rgb(179, 179, 179);
 	transition: color 0.4s;
-	padding: 10px;
 	background-color: black;
 	width: 100%;
 	border: none;
@@ -9,7 +8,6 @@
 	height: 40px;
 	line-height: 20px;
 	align-items: center;
-	margin: 0 23px;
 	padding: 0;
 }
 

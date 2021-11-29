@@ -1,9 +1,10 @@
 .sidebar {
 	background-color: black;
 	height: 100vh;
-	flex: 0.15;
 	color: white;
-	min-width: 230px;
+	width: 20%;
+	position: fixed;
+	left: 0;
 }
 
 #sidebar-logo {
@@ -20,4 +21,8 @@
 	background-color: rgb(40, 40, 40);
 	border: none;
 	height: 1px;
+}
+
+.playlists-container {
+	padding: 0 23px;
 }

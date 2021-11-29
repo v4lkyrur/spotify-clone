@@ -1,16 +1,15 @@
 import React from 'react'
-import store from './store'
+import store from '../app/store'
 import './Player.css'
 import Sidebar from './Sidebar'
 import Body from './Body'
 import Footer from './Footer'
 
 function Player({ spotify }) {
-	//const user = useSelector(selectUser);
 	return (
 		<div className='player'>
 			<div className='player-content'>
-				<Sidebar />
+				<Sidebar spotify={spotify} />
 				<Body spotify={spotify} />
 			</div>
 			<Footer spotify={spotify} />
